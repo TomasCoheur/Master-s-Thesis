@@ -1,0 +1,87 @@
+{
+    "hardware": [
+        {
+            "controllers": [
+                {
+                    "name": "ArduinoUno",
+                    "connections": [
+                        "Computer (Equipped with Microphone, Speaker and Camera) and a Servo"
+                    ],
+                    "id": "gb.hardware.controllers.arduinouno"
+                }
+            ]
+        },
+        {
+            "sensors": [
+                {
+                    "name": "None",
+                    "connections": [
+                        "None"
+                    ],
+                    "id": "gb.hardware.sensors.none"
+                }
+            ]
+        },
+        {
+            "energie": [
+                {
+                    "name": "Computer",
+                    "connections": [],
+                    "id": "gb.hardware.energie.computer"
+                }
+            ]
+        }
+    ],
+    "software": [
+        {
+            "ide": [
+                {
+                    "name": "Arduino IDE and VSCode",
+                    "connections": [],
+                    "id": "gb.software.ide.arduino ide and vscode"
+                }
+            ]
+        },
+        {
+            "code": [
+                {
+                    "name": "Main one is stm.py but there are many more",
+                    "connections": [],
+                    "id": "gb.software.code.main one is stm.py but there are many more"
+                },
+                {
+                    "name": "For example setup.py or arduino.c but many many more",
+                    "connections": [],
+                    "id": "gb.software.code.for example setup.py or arduino.c but many many more"
+                }
+            ]
+        },
+        {
+            "sites": [
+                {
+                    "name": "None",
+                    "connections": [],
+                    "id": "gb.software.sites.none"
+                }
+            ]
+        },
+        {
+            "tools": [
+                {
+                    "name": "Cables",
+                    "connections": [],
+                    "id": "gb.software.tools.cables"
+                }
+            ]
+        },
+        {
+            "protocols": [
+                {
+                    "name": "none",
+                    "connections": [],
+                    "id": "gb.software.protocols.none"
+                }
+            ]
+        }
+    ]
+}

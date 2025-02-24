@@ -1,0 +1,152 @@
+{
+    "hardware": [
+        {
+            "controllers": [
+                {
+                    "name": "RaspberryPi",
+                    "connections": [
+                        "ArduinoUNO",
+                        "LEDs",
+                        "LCD",
+                        "WebPage"
+                    ],
+                    "id": "gb.hardware.controllers.raspberrypi"
+                },
+                {
+                    "name": "ArduinoUNO",
+                    "connections": [
+                        "Sensors",
+                        "RaspberryPi"
+                    ],
+                    "id": "gb.hardware.controllers.arduinouno"
+                }
+            ]
+        },
+        {
+            "sensors": [
+                {
+                    "name": "Light",
+                    "connections": [
+                        "ArduinoUNO"
+                    ],
+                    "id": "gb.hardware.sensors.light"
+                },
+                {
+                    "name": "Temperature",
+                    "connections": [
+                        "ArduinoUNO"
+                    ],
+                    "id": "gb.hardware.sensors.temperature"
+                },
+                {
+                    "name": "Buttons",
+                    "connections": [
+                        "ArduinoUNO"
+                    ],
+                    "id": "gb.hardware.sensors.buttons"
+                }
+            ]
+        },
+        {
+            "energie": [
+                {
+                    "name": "Power outlet",
+                    "connections": [],
+                    "id": "gb.hardware.energie.power outlet"
+                }
+            ]
+        }
+    ],
+    "software": [
+        {
+            "ide": [
+                {
+                    "name": "ArduinoIDE",
+                    "connections": [],
+                    "id": "gb.software.ide.arduinoide"
+                },
+                {
+                    "name": "VSCode",
+                    "connections": [],
+                    "id": "gb.software.ide.vscode"
+                }
+            ]
+        },
+        {
+            "code": [
+                {
+                    "name": "send-serial.ino",
+                    "connections": [],
+                    "id": "gb.software.code.send-serial.ino"
+                },
+                {
+                    "name": "lcd_commands.py",
+                    "connections": [],
+                    "id": "gb.software.code.lcd_commands.py"
+                },
+                {
+                    "name": "command_parser.py",
+                    "connections": [],
+                    "id": "gb.software.code.command_parser.py"
+                },
+                {
+                    "name": "classroom_controller.py",
+                    "connections": [],
+                    "id": "gb.software.code.classroom_controller.py"
+                },
+                {
+                    "name": "app.py",
+                    "connections": [],
+                    "id": "gb.software.code.app.py"
+                },
+                {
+                    "name": "index2.html",
+                    "connections": [],
+                    "id": "gb.software.code.index2.html"
+                },
+                {
+                    "name": "room123student.html",
+                    "connections": [],
+                    "id": "gb.software.code.room123student.html"
+                },
+                {
+                    "name": "room123teacher.html",
+                    "connections": [],
+                    "id": "gb.software.code.room123teacher.html"
+                }
+            ]
+        },
+        {
+            "sites": [
+                {
+                    "name": "None",
+                    "connections": [],
+                    "id": "gb.software.sites.none"
+                }
+            ]
+        },
+        {
+            "tools": [
+                {
+                    "name": "USB cable",
+                    "connections": [],
+                    "id": "gb.software.tools.usb cable"
+                },
+                {
+                    "name": "WiFi",
+                    "connections": [],
+                    "id": "gb.software.tools.wifi"
+                }
+            ]
+        },
+        {
+            "protocols": [
+                {
+                    "name": "http",
+                    "connections": [],
+                    "id": "gb.software.protocols.http"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{"hardware":[
+    {"controllers":[
+        {"name":"RaspberryPi", "id":"gb.hardware.controllers.raspberrypi", "connections":["Other Controller", "WebPage", "Sensors"]},
+        {"name":"ArduinoNANO", "id":"gb.hardware.controllers.arduinonano", "connections":["Other Controller", "Sensors"]},
+        {"name":"Laptop", "id":"gb.hardware.controllers.laptop", "connections":["Other Controller", "Database", "WebPage"]}
+    ]},
+    {"sensors":[
+        {"name":"Microwave Radar", "id":"gb.hardware.sensors.microwave radar", "connections":["Arduino"]},
+        {"name":"Camera", "id":"gb.hardware.sensors.camera", "connections":["RaspberryPi"]}
+    ]},
+    {"energie":[
+        {"name":"Battery", "id":"gb.hardware.energie.battery", "connections":[]}
+    ]}],
+
+"software":[
+    {"ide":[
+        {"name":"ArduinoIDE", "id":"gb.software.ide.arduino ide", "connections":[]},
+        {"name":"VSCode", "id":"gb.software.ide.vscode", "connections":[]}
+    ]},
+    {"code":[
+        {"name":"arduino-mqtt.ino", "id":"gb.software.code.arduino-mqtt.ino", "connections":[]},
+        {"name":"ambint_client.py", "id":"gb.software.code.ambint_client.py", "connections":[]},
+        {"name":"ambint_compreface.py", "id":"gb.software.code.ambint_compreface.py", "connections":[]},
+        {"name":"ambint_server.py", "id": "gb.software.code.ambint_server.py", "connections": []},
+        {"name":"image_pb2_grpc.py", "id":"gb.software.code.image_pb2_grpc.py", "connections":[]},
+        {"name":"image_pb2.py", "id":"gb.software.code.image_pb2.py", "connections":[]},
+        {"name":"image.proto", "id":"gb.software.code.image.proto", "connections":[]},
+        {"name":"head_hand_detection.py", "id":"gb.software.code.head_hand_detection.py", "connections":[]},
+        {"name":"ambint_client_2.py", "id":"gb.software.code.ambint_client_2.py", "connections": []},
+        {"name":"web-app-code", "id":"gb.software.code.web-app-code", "connections":[]}
+    ]},
+    {"sites":[
+        {"name":"Vercel", "id":"gb.software.sites.vercel", "connections":[]},
+        {"name":"MongoDB", "id":"gb.software.sites.mongodb", "connections":[]}
+    ]},
+    {"tools":[
+        {"name":"WiFi", "id":"gb.software.tools.wifi", "connections":[]},
+        {"name":"Cables", "id":"gb.software.tools.cables", "connections":[]}
+    ]},
+    {"protocols":[
+        {"name":"MQTT", "id":"gb.software.protocols.mqtt", "connections":[]},
+        {"name":"http", "id":"gb.software.protocols.http", "connections":[]}
+    ]}
+]}

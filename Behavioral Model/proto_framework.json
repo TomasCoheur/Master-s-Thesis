@@ -1,0 +1,26 @@
+{"data_collection": [
+        {"id": "gb.data.collection.arduino",
+            "description": "Arduino MKR 1010 for data collection",
+            "sensors": "Various IoT sensors",
+            "sampling_rate": "1 sample per second"},
+        {"id": "gb.data.collection.arduino_carrier",
+            "description": "Arduino IoT Carrier for extended sensor capabilities",
+            "sensors": "Built-in temperature, humidity, pressure, light, and gesture sensors",
+            "sampling_rate": "Adjustable sampling rate"}],
+    "data_transmission": [
+        {"id": "gb.data.transmission.wifi",
+            "description": "Wi-Fi module for data transmission",
+            "protocol": "Wi-Fi"}],
+    "data_processing": [
+        {"id": "gb.data.processing.raspberrypi",
+            "description": "Raspberry Pi 4 for data processing",
+            "algorithms": "Data filtering and aggregation"}],
+    "data_storage": [
+        {"id": "gb.data.storage.mysql",
+            "description": "MySQL database for data storage",
+            "type": "Relational database"}],
+    "data_visualization": [
+        {"id": "gb.data.visualization.powerbi",
+            "description": "PowerBI for data visualization",
+            "platform": "PowerBI"}]
+}

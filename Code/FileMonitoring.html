@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-time File Monitoring</title>
+</head>
+<body>
+
+  <div id="output"></div>
+
+  <script>
+    function checkFile() {
+      fetch('"C:\Users\tomas\Desktop\file.txt"')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`Failed to fetch file (${response.status} ${response.statusText})`);
+          }
+          return response.text();
+        })
+        .then(contents => {
+          displayFileContents(contents);
+          setTimeout(checkFile, 1000); // Check for updates every 1 second
+        })
+        .catch(error => {
+          console.error('Error:', error.message);
+          setTimeout(checkFile, 1000); // Retry after 1 second in case of an error
+        });
+    }
+
+    function displayFileContents(contents) {
+      const outputDiv = document.getElementById('output');
+      outputDiv.innerText = contents;
+    }
+
+    // Initial check when the page loads
+    checkFile();
+  </script>
+
+</body>
+</html>

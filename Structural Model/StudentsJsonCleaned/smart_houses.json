@@ -1,0 +1,29 @@
+{"hardware":[
+    {"controllers":[
+        {"name":"RaspberryPi", "id":"gb.hardware.controllers.raspberrypi", "connections":["Sensors"]}
+    ]},
+    {"sensors":[
+        {"name":"LEDs", "id":"gb.hardware.sensors.leds", "connections":["RaspberryPi"]},
+        {"name":"RGBLEDs", "id":"gb.hardware.sensors.rgbleds", "connections":["RaspberryPi"]},
+        {"name":"Buzzer", "id":"gb.hardware.sensors.buzzer", "connections":["RaspberryPi"]},
+        {"name":"Button", "id":"gb.hardware.sensors.button", "connections":["RaspberryPi"]},
+        {"name":"Motion", "id":"gb.hardware.sensors.motion", "connections":["RaspberryPi"]}
+    ]},
+    {"energie":[
+        {"name":"PowerOutlet", "id": "gb.hardware.energie.PowerOutlet", "connections":[]}
+    ]}],
+
+"software":[
+    {"ide":[
+        {"name":"vim", "id":"gb.software.ide.vim", "connections":[]}
+    ]},
+    {"code":[
+        {"name":"main.py", "id":"gb.software.code.main.py", "connections":[]},
+        {"name":"facial_req.py", "id":"gb.software.code.facial_req.py", "connections":[]}
+    ]},
+    {"sites":[]},
+    {"tools":[
+        {"name":"Cables", "id":"gb.software.tools.cables", "connections":[]}
+    ]},
+    {"protocols":[]}
+]}

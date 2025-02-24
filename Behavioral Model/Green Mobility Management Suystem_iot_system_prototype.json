@@ -1,0 +1,45 @@
+{
+    "data_collection": [
+        {
+            "id": "gb.data.collection.Triaxialaccelerometer",
+            "description": "A sensor to analyse the inclination of roads and steep \u00e7\u00baelevation changes to monitor de safety of the user while riding the e-scooter.",
+            "sensors": "Distance, Temperature and Humidity, Geo-Location and Air  Quality.",
+            "sampling_rate": "1 sample/second"
+        },
+        {
+            "id": "gb.data.collection.Gyroscope",
+            "description": "A sensor to analyse the variations in oscilation by the e-scooter when a user is using said equipment",
+            "sensors": "Distance, Temperature and Humidity, Geo-Location and Air Quality",
+            "sampling_rate": "1 sample/second"
+        }
+    ],
+    "data_transmission": [
+        {
+            "id": "gb.data.transmission.DTNModule",
+            "description": "A module to allow the components of the system to transmit information in a Delay/Disruption Tolerant Network.",
+            "protocol": "LTP/Bundle Protocol"
+        }
+    ],
+    "data_processing": [
+        {
+            "id": "gb.data.processing.DataAnalyser",
+            "description": "A component to gather the data collected and transform it to display the information to the User and to higher legislative hierarchies.",
+            "algorithms": "Statistical Analisis"
+        }
+    ],
+    "data_storage": [
+        {
+            "id": "gb.data.storage.CentralDatabaseServer",
+            "description": "A central database capable of storing all the informations provided by the users about their respective transversals",
+            "type": "SQL"
+        }
+    ],
+    "data_visualization": [
+        {
+            "id": "gb.data.visualization.PowerBIDashboard",
+            "description": "A Power BI dashboard to display the information to the user and the legistalive hierarchy in a more simple and succinct mannor",
+            "platform": "Power BI"
+        }
+    ],
+    "automated_action": []
+}

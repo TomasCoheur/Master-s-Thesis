@@ -1,0 +1,30 @@
+{"hardware":[
+    {"controllers":[
+        {"name":"RaspberryPi4", "id":"gb.hardware.controllers.raspberrypi4", "dependencies":null, "webpage":"https://www.raspberrypi.com/products/"},
+        {"name":"NiclaVisionPro", "id":"gb.hardware.controllers.niclavisionpro", "dependencies":null, "webpage":"https://store.arduino.cc/products/nicla-vision"}
+    ]},
+    {"sensors":[
+    ]},
+    {"energie":[
+        {"name":"Powerbank", "id":"gb.hardware.controllers.powerbank", "dependencies":null, "webpage":"https://www.xiaomistore.pt/power-bank-mi-50w-power-bank-20000"}
+    ]}],
+    
+"software":[
+    {"ide": [
+        {"name":"OpenMVIDE", "id":"gb.hardware.controllers.openmvide", "dependencies":null, "webpage":"https://openmv.io/"}
+    ]},
+    {"code":[
+        {"name":"MovementDetectionNiclaWiFi", "id":"gb.software.code.niclawifi", "dependencies":["NiclaVision", "WiFi"], "webpage":"Prototype2/Proto2Code/MovementDetection.py"},
+        {"name":"MovementDetectionNiclaBluetooth", "id":"gb.software.code.niclabluetooth", "dependencies":["NiclaVision", "Bluetooth"], "webpage":"Prototype2/Proto2Code/MovementDetectionBluetooth.py"},
+        {"name":"ImageServer", "id":"gb.software.code.imageserver", "dependencies":["RaspberryPi4", "Apache"], "webpage":"Prototype2/Proto2Code/imageServer.html"}
+    ]},
+    {"sites":[
+    ]},
+    {"tools":[
+        {"name":"Wifi", "id":"gb.software.tools.wifi", "dependencies":null, "webpage":"https://en.wikipedia.org/wiki/Wi-Fi"},
+        {"name":"Bluetooth", "id":"gb.software.tools.bluetooth", "dependencies":null, "webpage":"https://en.wikipedia.org/wiki/Bluetooth"}
+    ]},
+    {"protocols":[
+        {"name":"HTTP", "id":"gb.software.protocols.http", "dependencies":["ArduinoMKR1010"], "webpage":"https://en.wikipedia.org/wiki/HTTP"}
+    ]}]
+}

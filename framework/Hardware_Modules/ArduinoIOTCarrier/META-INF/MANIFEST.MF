@@ -1,0 +1,8 @@
+// MANIFEST.MF for ArduinoIOTCarrier
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: gb.hardware.arduinocarrier
+Bundle-Version: 1.0.0
+Bundle-Activator: gb.hardware.arduinocarrier.ArduinoIOTCarrier
+Export-Package: gb.hardware.arduinocarrier
+Import-Package: gb.hardware.arduino;version="[1.0,2)"

@@ -1,0 +1,31 @@
+{"hardware":[
+    {"controllers":[
+        {"name":"ArduinoMKR1010", "id":"gb.hardware.controllers.arduinoMKR1010", "dependencies":null, "webpage":"https://store.arduino.cc/products/arduino-mkr-wifi-1010"},
+        {"name":"RaspberryPi4", "id":"gb.hardware.controllers.raspberrypi4", "dependencies":null, "webpage":"https://www.raspberrypi.com/products/"}
+    ]},
+    {"sensors":[
+        {"name":"ArduCAM", "id":"gb.hardware.sensors.arducam", "dependencies":["ArduinoMKR1010", "RaspberryPi4"], "webpage":"https://www.ptrobotics.com/cameras/5120-arducam-mini-camera-module-shield-w-2-mp-ov2640-for-arduino.html"},
+        {"name":"GravityIR", "id":"gb.hardware.sensors.gravityIR", "dependencies":["ArduinoMKR1010", "RaspberryPi4"], "webpage":"https://www.ptrobotics.com/cameras/6945-gravity-ir-positioning-camera-for-arduino.html"}
+    ]},
+    {"energie":[
+        {"name":"Powerbank", "id":"gb.hardware.controllers.powerbank", "dependencies":null, "webpage":"https://www.xiaomistore.pt/power-bank-mi-50w-power-bank-20000"},
+        {"name":"Battery", "id":"gb.hardware.controllers.battery", "dependencies":null, "webpage":"https://mauser.pt/catalog/product_info.php?products_id=120-0421"}
+    ]}],
+    
+"software":[
+    {"ide": [
+        {"name":"ArduinoIDE", "id":"gb.hardware.controllers.arduinoide", "dependencies":null, "webpage":"https://www.arduino.cc/en/software"}
+    ]},
+    {"code":[
+        {"name":"ArduCamCode", "id":"gb.software.code.arducam", "dependencies":["ArduinoMKR1010", "ArduCAM"], "webpage":"Prototype2_5/Proto2_5Code/ArduCamCode.ino"},
+        {"name":"ImageServer", "id":"gb.software.code.imageserver", "dependencies":["RaspberryPi4", "Apache"], "webpage":"Prototype2_5/Proto2_5Code/imageServer.html"}
+    ]},
+    {"sites":[
+    ]},
+    {"tools":[
+        {"name":"Wifi", "id":"gb.software.tools.wifi", "dependencies":null, "webpage":"https://en.wikipedia.org/wiki/Wi-Fi"}
+    ]},
+    {"protocols":[
+        {"name":"HTTP", "id":"gb.software.protocols.http", "dependencies":["ArduinoMKR1010"], "webpage":"https://en.wikipedia.org/wiki/HTTP"}
+    ]}]
+}

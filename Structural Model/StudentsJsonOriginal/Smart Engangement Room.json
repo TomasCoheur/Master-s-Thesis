@@ -1,0 +1,82 @@
+{
+    "hardware": [
+        {
+            "controllers": [
+                {
+                    "name": "Raspberry Pi, ArduinoNANO, PC (for image processing)",
+                    "connections": [
+                        "Motion Sensor <-> ArduinoNANO <-> Rasberry Pi <-> PC <-> WebServer (WebPage) <-> Database"
+                    ],
+                    "id": "gb.hardware.controllers.raspberry pi, arduinonano, pc (for image processing)"
+                }
+            ]
+        },
+        {
+            "sensors": [
+                {
+                    "name": "Motion Sensor (Ultrasound)",
+                    "connections": [
+                        "ArduinoNANO"
+                    ],
+                    "id": "gb.hardware.sensors.motion sensor (ultrasound)"
+                }
+            ]
+        },
+        {
+            "energie": [
+                {
+                    "name": "PC energy (power outlet)",
+                    "connections": [],
+                    "id": "gb.hardware.energie.pc energy (power outlet)"
+                }
+            ]
+        }
+    ],
+    "software": [
+        {
+            "ide": [
+                {
+                    "name": "Arduino IDE, other IDE's for general programming (VSCode, NeoVim ...)",
+                    "connections": [],
+                    "id": "gb.software.ide.arduino ide, other ide's for general programming (vscode, neovim ...)"
+                }
+            ]
+        },
+        {
+            "code": [
+                {
+                    "name": "app.js, ambint_client.py ambint_server.py head_hand_detection.py motion_sensor.ino communication.ino",
+                    "connections": [],
+                    "id": "gb.software.code.app.js, ambint_client.py ambint_server.py head_hand_detection.py motion_sensor.ino communication.ino"
+                }
+            ]
+        },
+        {
+            "sites": [
+                {
+                    "name": "...",
+                    "connections": [],
+                    "id": "gb.software.sites...."
+                }
+            ]
+        },
+        {
+            "tools": [
+                {
+                    "name": "WiFi, Cables",
+                    "connections": [],
+                    "id": "gb.software.tools.wifi, cables"
+                }
+            ]
+        },
+        {
+            "protocols": [
+                {
+                    "name": "MQTT, http (REST)",
+                    "connections": [],
+                    "id": "gb.software.protocols.mqtt, http (rest)"
+                }
+            ]
+        }
+    ]
+}

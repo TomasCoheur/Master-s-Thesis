@@ -1,0 +1,38 @@
+{"hardware":[
+    {"controllers":[
+        {"name":"RaspberryPi", "id":"gb.hardware.controllers.raspberrypi", "connections":["ArduinoUNO", "LEDs", "LCD", "WebPage"]},
+        {"name":"ArduinoUNO", "id":"gb.hardware.controllers.arduinouno", "connections":["Sensors", "RaspberryPi"]}
+    ]},
+    {"sensors":[
+        {"name":"Light", "id":"gb.hardware.sensors.light", "connections":["ArduinoUNO"]},
+        {"name":"Temperature", "id":"gb.hardware.sensors.temperature", "connections":["ArduinoUNO"]},
+        {"name":"Buttons", "id":"gb.hardware.sensors.buttons", "connections":["ArduinoUNO"]}
+    ]},
+    {"energie":[
+        {"name":"PowerOutlet", "id":"gb.hardware.energie.poweroutlet", "connections":[]}
+    ]}],
+
+"software":[
+    {"ide":[
+        {"name":"ArduinoIDE", "id":"gb.software.ide.arduinoide", "connections":[]},
+        {"name":"VSCode", "id":"gb.software.ide.vscode", "connections":[]}
+    ]},
+    {"code":[
+        {"name":"send-serial.ino", "id":"gb.software.code.send-serial.ino", "connections":[]},
+        {"name":"lcd_commands.py", "id":"gb.software.code.lcd_commands.py", "connections":[]},
+        {"name":"command_parser.py", "id":"gb.software.code.command_parser.py", "connections":[]},
+        {"name":"classroom_controller.py", "id":"gb.software.code.classroom_controller.py", "connections":[]},
+        {"name":"app.py", "id":"gb.software.code.app.py", "connections":[]},
+        {"name":"index2.html", "id":"gb.software.code.index2.html", "connections":[]},
+        {"name":"room123student.html", "id":"gb.software.code.room123student.html", "connections":[]},
+        {"name":"room123teacher.html", "id":"gb.software.code.room123teacher.html", "connections":[]}
+    ]},
+    {"sites":[]},
+    {"tools":[
+        {"name":"USB cable", "id":"gb.software.tools.usb cable", "connections":[]},
+        {"name": "WiFi", "id":"gb.software.tools.wifi", "connections":[]}
+    ]},
+    {"protocols":[
+        {"name":"http", "id":"gb.software.protocols.http", "connections":[]}
+    ]}
+]}

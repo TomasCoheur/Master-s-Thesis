@@ -1,0 +1,92 @@
+{
+    "data_collection": [
+        {
+            "id": "gb.data.collection.SensorModule1",
+            "description": "Sensor Module is a set of devices used to detect the distance between the module and a target. Is composed by 2 ultrasound sensors, an Arduino Uno and a NRF24L01 radio module to communicate.",
+            "sensors": "2 ultrasound sensors, 1 Arduino Uno and a NRF24L01 module",
+            "sampling_rate": "1"
+        },
+        {
+            "id": "gb.data.collection.SensorModule2",
+            "description": " Sensor Module is a set of devices used to detect the distance between the module and a target. Is composed by 2 ultrasound sensors, an Arduino Uno and a NRF24L01 radio module to communicate.",
+            "sensors": "2 ultrasound sensors, 1 Arduino Uno and a NRF24L01 module",
+            "sampling_rate": "1"
+        },
+        {
+            "id": "gb.data.collection.SensorModule3",
+            "description": "Sensor Module is a set of devices used to detect the distance between the module and a target. Is composed by 2 ultrasound sensors, an Arduino Uno and a NRF24L01 radio module to communicate.",
+            "sensors": "2 ultrasound sensors, 1 Arduino Uno and a NRF24L01 module",
+            "sampling_rate": "1"
+        },
+        {
+            "id": "gb.data.collection.SensorModule4",
+            "description": "Sensor Module is a set of devices used to detect the distance between the module and a target. Is composed by 2 ultrasound sensors, an Arduino Uno and a NRF24L01 radio module to communicate.",
+            "sensors": "2 ultrasound sensors, 1 Arduino Uno and a NRF24L01 module",
+            "sampling_rate": "1"
+        }
+    ],
+    "data_transmission": [
+        {
+            "id": "gb.data.transmission.SensorModule1RadioModule",
+            "description": "A NRF24L01 module used to connect the sensor module 1 and the master module",
+            "protocol": "RF (2.4GHz)"
+        },
+        {
+            "id": "gb.data.transmission.SensorModule2RadioModule",
+            "description": "A NRF24L01 module used to connect the sensor module 2 and the master module",
+            "protocol": "RF (2.4GHz)"
+        },
+        {
+            "id": "gb.data.transmission.SensorModule3RadioModule",
+            "description": "A NRF24L01 module used to connect the sensor module 3 and the master module",
+            "protocol": " RF (2.4GHz)"
+        },
+        {
+            "id": "gb.data.transmission.SensorModule4RadioModule",
+            "description": "A NRF24L01 module used to connect the sensor module 4 and the master module",
+            "protocol": "RF (2.4GHz)"
+        },
+        {
+            "id": "gb.data.transmission.MasterNodeRadioModule",
+            "description": "A NRF24L01 module used to connect the master node and the sensor modules",
+            "protocol": "RF (2.4GHz)"
+        },
+        {
+            "id": "gb.data.transmission.ESP32Wi-FiInterface",
+            "description": "The master node will have an ESP32 with Wi-Fi interface in order to transmit data to a webserver application",
+            "protocol": "Wi-Fi"
+        },
+        {
+            "id": "gb.data.transmission.UbuntuComputerWi-FiInterface",
+            "description": "The ubuntu computer that has the webserver application need to have a Wi-Fi interface in order to communicate with the master node",
+            "protocol": "Wi-Fi"
+        }
+    ],
+    "data_processing": [
+        {
+            "id": "gb.data.processing.MasterNode",
+            "description": "The master node will be responsible to time synchronize the sensor modules and also to trilaterate the distances received by the sensor modules",
+            "algorithms": "Time synchronization algorithms and trilaterations algorithms"
+        },
+        {
+            "id": "gb.data.processing.UbuntuComputerWebserverApplication",
+            "description": "In the webserver application the data will be organized and sent to the application to be presented to the user.",
+            "algorithms": "SQL queries"
+        }
+    ],
+    "data_storage": [
+        {
+            "id": "gb.data.storage.PostgresqlDatabase",
+            "description": "The database will be used to store the data received by the sensors, this data will then be presented to the user in the application.",
+            "type": "SQL"
+        }
+    ],
+    "data_visualization": [
+        {
+            "id": "gb.data.visualization.Dashboardandreal-timevirtualmap",
+            "description": "The application will present data to the user in form of a dashboard, to analyse statistical data and also present a virtal map of the room the system is with the information about ocupational data.",
+            "platform": "Django Channels"
+        }
+    ],
+    "automated_action": []
+}

@@ -1,0 +1,110 @@
+{
+    "hardware": [
+        {
+            "controllers": [
+                {
+                    "name": "RaspberryPi",
+                    "connections": [
+                        "ArduinoUNO",
+                        "WebServer",
+                        "Camera"
+                    ],
+                    "id": "gb.hardware.controllers.raspberrypi"
+                },
+                {
+                    "name": "ArduinoUNO",
+                    "connections": [
+                        "RaspberryPi",
+                        "Sensors",
+                        "LEDs"
+                    ],
+                    "id": "gb.hardware.controllers.arduinouno"
+                }
+            ]
+        },
+        {
+            "sensors": [
+                {
+                    "name": "Light",
+                    "connections": [
+                        "Arduino"
+                    ],
+                    "id": "gb.hardware.sensors.light"
+                },
+                {
+                    "name": "Temperature and Humidity",
+                    "connections": [
+                        "Arduino"
+                    ],
+                    "id": "gb.hardware.sensors.temperature and humidity"
+                }
+            ]
+        },
+        {
+            "energie": [
+                {
+                    "name": "Power socket",
+                    "connections": [],
+                    "id": "gb.hardware.energie.power socket"
+                }
+            ]
+        }
+    ],
+    "software": [
+        {
+            "ide": [
+                {
+                    "name": "Arduino IDE",
+                    "connections": [],
+                    "id": "gb.software.ide.arduino ide"
+                }
+            ]
+        },
+        {
+            "code": [
+                {
+                    "name": "sensors.ino",
+                    "connections": [],
+                    "id": "gb.software.code.sensors.ino"
+                }
+            ]
+        },
+        {
+            "sites": [
+                {
+                    "name": "DHT",
+                    "connections": [],
+                    "id": "gb.software.sites.dht"
+                }
+            ]
+        },
+        {
+            "tools": [
+                {
+                    "name": "Cables",
+                    "connections": [],
+                    "id": "gb.software.tools.cables"
+                },
+                {
+                    "name": "WiFi",
+                    "connections": [],
+                    "id": "gb.software.tools.wifi"
+                }
+            ]
+        },
+        {
+            "protocols": [
+                {
+                    "name": "http",
+                    "connections": [],
+                    "id": "gb.software.protocols.http"
+                },
+                {
+                    "name": "smtp",
+                    "connections": [],
+                    "id": "gb.software.protocols.smtp"
+                }
+            ]
+        }
+    ]
+}

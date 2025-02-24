@@ -1,0 +1,7 @@
+// MANIFEST.MF for ArduinoMKR1010
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: gb.hardware.arduino
+Bundle-Version: 1.0.0
+Bundle-Activator: gb.hardware.arduino.ArduinoMKR1010
+Export-Package: gb.hardware.arduino

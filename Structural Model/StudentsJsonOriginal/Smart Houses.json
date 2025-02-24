@@ -1,0 +1,91 @@
+{
+    "hardware": [
+        {
+            "controllers": [
+                {
+                    "name": "RaspberryPi",
+                    "connections": [
+                        "Sensors",
+                        "LEDs",
+                        "RGBLEDs",
+                        "Passive Buzzers",
+                        "Buttons"
+                    ],
+                    "id": "gb.hardware.controllers.raspberrypi"
+                }
+            ]
+        },
+        {
+            "sensors": [
+                {
+                    "name": "Motion",
+                    "connections": [
+                        "RaspberryPi"
+                    ],
+                    "id": "gb.hardware.sensors.motion"
+                }
+            ]
+        },
+        {
+            "energie": [
+                {
+                    "name": "Wall outlet",
+                    "connections": [],
+                    "id": "gb.hardware.energie.wall outlet"
+                }
+            ]
+        }
+    ],
+    "software": [
+        {
+            "ide": [
+                {
+                    "name": "vim",
+                    "connections": [],
+                    "id": "gb.software.ide.vim"
+                }
+            ]
+        },
+        {
+            "code": [
+                {
+                    "name": "main.py",
+                    "connections": [],
+                    "id": "gb.software.code.main.py"
+                },
+                {
+                    "name": "facial_req.py",
+                    "connections": [],
+                    "id": "gb.software.code.facial_req.py"
+                }
+            ]
+        },
+        {
+            "sites": [
+                {
+                    "name": "",
+                    "connections": [],
+                    "id": "gb.software.sites."
+                }
+            ]
+        },
+        {
+            "tools": [
+                {
+                    "name": "Cables",
+                    "connections": [],
+                    "id": "gb.software.tools.cables"
+                }
+            ]
+        },
+        {
+            "protocols": [
+                {
+                    "name": "",
+                    "connections": [],
+                    "id": "gb.software.protocols."
+                }
+            ]
+        }
+    ]
+}

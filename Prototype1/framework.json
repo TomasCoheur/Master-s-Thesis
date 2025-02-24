@@ -1,0 +1,33 @@
+{"hardware":[
+    {"controllers":[
+        {"name":"ArduinoMKR1010", "id":"gb.hardware.controllers.arduinoMKR1010", "dependencies":null},
+        {"name":"RaspberryPi4", "id":"gb.hardware.controllers.raspberrypi4", "dependencies":null}
+    ]},
+    {"sensors":[
+        {"name":"ArduinoIOTCarrier", "id":"gb.hardware.sensors.arduinoiotcarrier", "dependencies":["ArduinoMKR1010"]}
+    ]},
+    {"energie":[
+        {"name": "Powerbank", "id": "gb.hardware.controllers.powerbank", "dependencies": null},
+        {"name": "Battery", "id": "gb.hardware.controllers.battery", "dependencies": null}
+    ]}],
+    
+"software":[
+    {"ide": [
+        {"name": "ArduinoIDE", "id": "gb.hardware.controllers.arduinoide", "dependencies": null}
+    ]},
+    {"code":[
+        {"name":"ArduinoSecrets", "id":"gb.software.code.arduinosecrets", "dependencies":["ArduinoMKR1010", "WiFi"], "webpage":"Prototype1/Proto1Code/arduino_secrets.h"},
+        {"name":"Proto1Code", "id":"gb.software.code.proto1Code", "dependencies":["ArduinoMKR1010", "WiFi"], "webpage":"Prototype1/Proto1Code/Proto1Code.ino"}
+    ]},
+    {"sites":[
+        {"name": "PowerBI", "id": "gb.software.sites.powerbi", "dependencies": ["SQLDB"]}
+    ]},
+    {"tools":[
+        {"name": "Wifi", "id": "gb.software.tools.wifi", "dependencies": null},
+        {"name": "SQLDB", "id": "gb.software.tools.sqldb", "dependencies": null}
+    ]},
+    {"protocols":[
+        {"name": "MQTT", "id": "gb.software.protocols.mqtt", "dependencies": ["Wifi", "Bluetooth"]},
+        {"name": "HTTP", "id": "gb.software.protocols.http", "dependencies": ["ArduinoMKR1010"]}
+    ]}]
+}

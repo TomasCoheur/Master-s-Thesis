@@ -1,0 +1,173 @@
+{
+    "hardware": [
+        {
+            "controllers": [
+                {
+                    "name": "RaspberryPi",
+                    "connections": [
+                        "Other Controller",
+                        "WebPage",
+                        "Sensors"
+                    ],
+                    "id": "gb.hardware.controllers.raspberrypi"
+                },
+                {
+                    "name": "ArduinoNANO",
+                    "connections": [
+                        "Other Controller",
+                        "Sensors"
+                    ],
+                    "id": "gb.hardware.controllers.arduinonano"
+                },
+                {
+                    "name": "Student Laptop",
+                    "connections": [
+                        "Other Controller",
+                        "Database",
+                        "WebPage"
+                    ],
+                    "id": "gb.hardware.controllers.student laptop"
+                }
+            ]
+        },
+        {
+            "sensors": [
+                {
+                    "name": "Microwave Radar",
+                    "connections": [
+                        "Arduino"
+                    ],
+                    "id": "gb.hardware.sensors.microwave radar"
+                },
+                {
+                    "name": "Camera",
+                    "connections": [
+                        "RaspberryPi"
+                    ],
+                    "id": "gb.hardware.sensors.camera"
+                }
+            ]
+        },
+        {
+            "energie": [
+                {
+                    "name": "Battery",
+                    "connections": [],
+                    "id": "gb.hardware.energie.battery"
+                }
+            ]
+        }
+    ],
+    "software": [
+        {
+            "ide": [
+                {
+                    "name": "Arduino IDE",
+                    "connections": [],
+                    "id": "gb.software.ide.arduino ide"
+                },
+                {
+                    "name": "VSCode",
+                    "connections": [],
+                    "id": "gb.software.ide.vscode"
+                }
+            ]
+        },
+        {
+            "code": [
+                {
+                    "name": "arduino-mqtt.ino",
+                    "connections": [],
+                    "id": "gb.software.code.arduino-mqtt.ino"
+                },
+                {
+                    "name": "ambint_client.py",
+                    "connections": [],
+                    "id": "gb.software.code.ambint_client.py"
+                },
+                {
+                    "name": "ambint_compreface.py",
+                    "connections": [],
+                    "id": "gb.software.code.ambint_compreface.py"
+                },
+                {
+                    "name": "ambint_server.py",
+                    "connections": [],
+                    "id": "gb.software.code.ambint_server.py"
+                },
+                {
+                    "name": "image_pb2_grpc.py",
+                    "connections": [],
+                    "id": "gb.software.code.image_pb2_grpc.py"
+                },
+                {
+                    "name": "image_pb2.py",
+                    "connections": [],
+                    "id": "gb.software.code.image_pb2.py"
+                },
+                {
+                    "name": "image.proto",
+                    "connections": [],
+                    "id": "gb.software.code.image.proto"
+                },
+                {
+                    "name": "head_hand_detection.py",
+                    "connections": [],
+                    "id": "gb.software.code.head_hand_detection.py"
+                },
+                {
+                    "name": "ambint_client_2.py",
+                    "connections": [],
+                    "id": "gb.software.code.ambint_client_2.py"
+                },
+                {
+                    "name": "web-app-code",
+                    "connections": [],
+                    "id": "gb.software.code.web-app-code"
+                }
+            ]
+        },
+        {
+            "sites": [
+                {
+                    "name": "Vercel",
+                    "connections": [],
+                    "id": "gb.software.sites.vercel"
+                },
+                {
+                    "name": "MongoDB",
+                    "connections": [],
+                    "id": "gb.software.sites.mongodb"
+                }
+            ]
+        },
+        {
+            "tools": [
+                {
+                    "name": "WiFi",
+                    "connections": [],
+                    "id": "gb.software.tools.wifi"
+                },
+                {
+                    "name": "Cables",
+                    "connections": [],
+                    "id": "gb.software.tools.cables"
+                }
+            ]
+        },
+        {
+            "protocols": [
+                {
+                    "name": "MQTT",
+                    "connections": [],
+                    "id": "gb.software.protocols.mqtt"
+                },
+                {
+                    "name": "http",
+                    "connections": [],
+                    "id": "gb.software.protocols.http"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+// MANIFEST.MF for SoftwareModule
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.example.software
+Bundle-Version: 1.0.0
+Bundle-Activator: software.arducam.code.ArduCAMcode
+Export-Package: software.arducam.code

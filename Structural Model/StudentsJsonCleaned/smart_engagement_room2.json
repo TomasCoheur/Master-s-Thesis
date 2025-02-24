@@ -1,0 +1,38 @@
+{"hardware":[
+    {"controllers":[
+        {"name":"Raspberry Pi", "id":"gb.hardware.controllers.raspberrypi", "connections":["ArduinoNANO", "PC"]},
+        {"name":"ArduinoNANO", "id":"gb.hardware.controllers.arduinonano", "connections":["Ultrasound", "RaspberryPi"]},
+        {"name":"Laptop", "id":"gb.hardware.controllers.laptop", "connections":["Rasberry Pi", "WebServer"]}    
+    ]},
+    {"sensors":[
+        {"name":"Ultrasound", "id":"gb.hardware.sensors.ultrasound", "connections":["ArduinoNANO"]}
+    ]},
+    {"energie":[
+        {"name":"Laptop", "id":"gb.hardware.energie.laptop", "connections":["Arduino", "RaspberryPi"]},
+        {"name":"PowerOutlet", "id":"gb.hardware.energie.poweroutlet", "connections":["PC"]}
+    ]}],
+
+"software":[
+    {"ide":[
+        {"name":"ArduinoIDE", "id":"gb.software.ide.arduinoide", "connections":[]},
+        {"name":"GeneralIDE", "id":"gb.software.ide.generalide", "connections":[]}
+
+    ]},
+    {"code":[
+        {"name": "app.js", "id": "gb.software.code.app.js", "connections":[]},
+        {"name": "ambint_client.py", "id": "gb.software.code.ambint_client.py", "connections":[]},
+        {"name": "ambint_server.py", "id": "gb.software.code.ambint_server.py", "connections":[]},
+        {"name": "head_hand_detection.py", "id": "gb.software.code.head_hand_detection.py", "connections":[]},
+        {"name": "motion_sensor.ino", "id": "gb.software.code.motion_sensor.ino", "connections":[]},
+        {"name": "communication.ino", "id": "gb.software.code.communication.ino", "connections":[]}
+    ]},
+    {"sites":[]},
+    {"tools":[
+        {"name":"WiFi", "id":"gb.software.tools.wifi", "connections":[]},
+        {"name":"Cables", "id":"gb.software.tools.cables", "connections":[]}
+    ]},
+    {"protocols":[
+        {"name":"MQTT", "id":"gb.software.protocols.mqtt", "connections":[]},
+        {"name":"http", "id":"gb.software.protocols.http", "connections":[]}
+    ]}
+]}

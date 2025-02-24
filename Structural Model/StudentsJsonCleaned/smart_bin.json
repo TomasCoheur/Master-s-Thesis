@@ -1,0 +1,25 @@
+{"hardware": [
+    {"controllers":[
+        {"name": "ArduinoUNO", "id":"gb.hardware.controllers.arduinouno", "connections":["Sensor, Database, RGBLEDs, WebPage"]}
+    ]},
+    {"sensors":[{"name":"Ultrasonic", "id":"gb.hardware.sensors.ultrasonic", "connections":["Arduino"]}
+    ]},
+    {"energie":[
+        {"name":"PCbyUSBCable", "id":"gb.hardware.energie.pcbyusbcable", "connections":[]}
+    ]}],
+
+"software":[
+    {"ide":[
+        {"name":"Arduino IDE", "id":"gb.software.ide.arduino ide", "connections":[]}
+    ]},
+    {"code":[
+        {"name":"sketch_mar9a.ino", "id":"gb.software.code.sketch_mar9a.ino", "connections":[]}
+    ]},
+    {"sites":[]},
+    {"tools":[
+        {"name":"Cables", "id":"gb.software.tools.cables", "connections":[]}
+    ]},
+    {"protocols":[
+        {"name":"UART", "id":"gb.software.protocols.uart", "connections":[]}
+    ]}
+]}

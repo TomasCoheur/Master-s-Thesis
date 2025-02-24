@@ -1,0 +1,31 @@
+{"hardware":[
+    {"controllers":[
+        {"name":"ArduinoUno", "id":"gb.hardware.controllers.arduinouno", "connections":["Laptop", "Servo"]}
+    ]},
+    {"sensors":[
+        {"name":"LaptopMicrophone", "id":"gb.hardware.sensors.laptopmicrophone", "connections":["Laptop"]},
+        {"name":"LaptopCamera", "id":"gb.hardware.sensors.laptopcamera", "connections":["Laptop"]},
+        {"name":"LaptopSpeaker", "id":"gb.hardware.sensors.laptopspeaker", "connections":["Laptop"]},
+        {"name":"Motor", "id":"gb.hardware.sensors.motor", "connections":["ArduinoUNO"]}        
+    ]},
+    {"energie": [
+        {"name":"Laptop", "id":"gb.hardware.energie.laptop", "connections":["ArduinoUNO"]},
+        {"name":"PowerOutlet", "id":"gb.hardware.energie.laptop", "connections":["Laptop"]}
+    ]}],
+
+"software": [
+    {"ide":[
+        {"name":"ArduinoIDE", "id":"gb.software.ide.arduinoide", "connections":[]},
+        {"name":"VSCode", "id":"gb.software.ide.vscode", "connections":[]}
+    ]},
+    {"code":[
+        {"name":"stm.py", "id":"gb.software.code.stm.py", "connections":[]},
+        {"name":"setup.py", "id":"gb.software.code.setup.py", "connections":[]},
+        {"name":"arduino.c", "id":"gb.software.code.arduino.c", "connections":[]}
+    ]},
+    {"sites":[]},
+    {"tools":[
+        {"name":"Cables", "id":"gb.software.tools.cables", "connections":[]}
+    ]},
+    {"protocols":[]}
+]}

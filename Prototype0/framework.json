@@ -1,0 +1,24 @@
+{"hardware":[
+    {"controllers":[
+        {"name":"ArduinoMKR1010", "id":"gb.hardware.controllers.arduinoMKR1010", "dependencies":null}
+    ]},
+    {"sensors":[
+        {"name":"ArduinoIOTCarrier", "id":"gb.hardware.sensors.arduinoiotcarrier", "dependencies":["ArduinoMKR1010"]}
+    ]},
+    {"energie":[
+        {"name": "Powerbank", "id": "gb.hardware.controllers.powerbank", "dependencies": null},
+        {"name": "Battery", "id": "gb.hardware.controllers.battery", "dependencies": null}
+    ]}],
+    
+"software":[
+    {"ide": [
+        {"name": "ArduinoIDE", "id": "gb.hardware.controllers.arduinoide", "dependencies": null}
+    ]},
+    {"sites":[
+        {"name":"Adafruit", "id":"gb.software.sites.adafruit", "dependencies":["ArduinoMKR1010"]},
+        {"name":"IFTTT", "id":"gb.software.sites.ifttt", "dependencies":["ArduinoMKR1010"]}
+    ]},
+    {"tools":[
+        {"name": "Wifi", "id": "gb.software.tools.wifi", "dependencies": null}
+    ]}]
+}

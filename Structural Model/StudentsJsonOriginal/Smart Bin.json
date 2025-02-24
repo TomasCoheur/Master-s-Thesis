@@ -1,0 +1,82 @@
+{
+    "hardware": [
+        {
+            "controllers": [
+                {
+                    "name": "ArduinoUNO",
+                    "connections": [
+                        "Sensor, Database, RGBLEDs, WebPage"
+                    ],
+                    "id": "gb.hardware.controllers.arduinouno"
+                }
+            ]
+        },
+        {
+            "sensors": [
+                {
+                    "name": "Ultrasonic",
+                    "connections": [
+                        "Arduino"
+                    ],
+                    "id": "gb.hardware.sensors.ultrasonic"
+                }
+            ]
+        },
+        {
+            "energie": [
+                {
+                    "name": "PCbyUSBCable",
+                    "connections": [],
+                    "id": "gb.hardware.energie.pcbyusbcable"
+                }
+            ]
+        }
+    ],
+    "software": [
+        {
+            "ide": [
+                {
+                    "name": "Arduino IDE",
+                    "connections": [],
+                    "id": "gb.software.ide.arduino ide"
+                }
+            ]
+        },
+        {
+            "code": [
+                {
+                    "name": "sketch_mar9a.ino",
+                    "connections": [],
+                    "id": "gb.software.code.sketch_mar9a.ino"
+                }
+            ]
+        },
+        {
+            "sites": [
+                {
+                    "name": "",
+                    "connections": [],
+                    "id": "gb.software.sites."
+                }
+            ]
+        },
+        {
+            "tools": [
+                {
+                    "name": "Cables",
+                    "connections": [],
+                    "id": "gb.software.tools.cables"
+                }
+            ]
+        },
+        {
+            "protocols": [
+                {
+                    "name": "UART",
+                    "connections": [],
+                    "id": "gb.software.protocols.uart"
+                }
+            ]
+        }
+    ]
+}

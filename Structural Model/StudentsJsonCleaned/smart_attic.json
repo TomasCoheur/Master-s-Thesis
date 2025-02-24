@@ -1,0 +1,33 @@
+{"hardware":[
+    {"controllers":[
+        {"name":"RaspberryPi", "id":"gb.hardware.controllers.raspberrypi", "connections":["ArduinoUNO", "WebServer", "Camera"]},
+        {"name":"ArduinoUNO", "id":"gb.hardware.controllers.arduinouno", "connections":["RaspberryPi", "Sensors", "LEDs"]}
+    ]},
+    {"sensors":[
+        {"name":"Light", "id":"gb.hardware.sensors.light", "connections":["Arduino"]},
+        {"name":"Temperature and Humidity", "id":"gb.hardware.sensors.temperature and humidity", "connections":["Arduino"]}
+    ]},
+    {"energie":[
+        {"name":"Power socket", "id":"gb.hardware.energie.power socket", "connections":[]}
+    ]}],
+    
+"software":[
+    {"ide":[
+        {"name":"Arduino IDE", "id":"gb.software.ide.arduino ide", "connections":[]}
+    ]},
+    {"code":[
+        {"name":"sensors.ino", "id":"gb.software.code.sensors.ino", "connections":[]}
+    ]},
+    {"sites":[
+        {"name":"DHT", "id":"gb.software.sites.dht", "connections":[]}
+    ]},
+    {"tools":[
+        {"name":"Cables", "id":"gb.software.tools.cables", "connections":[]},
+        {"name":"WiFi", "id":"gb.software.tools.wifi", "connections":[]}
+    ]},
+    {
+    "protocols": [
+        {"name":"http", "id":"gb.software.protocols.http", "connections":[]},
+        {"name":"smtp", "id":"gb.software.protocols.smtp", "connections":[]}
+    ]}
+]}
